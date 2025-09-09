@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: #005245; */
 }
 
 body{
@@ -12,14 +11,12 @@ body{
 section{ 
      margin-top: 4rem;
     margin-left: 4rem;
-    border: 2px solid white;
-    height: 50rem;
     background-color: #ffffff;
 }
 
 nav{ 
     display: flex;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     padding-top: 2rem;
     justify-content: space-between;
@@ -52,7 +49,6 @@ nav{
 @media(min-width:320px) and (max-width:500px){
     nav{
         width: calc(100% - 40px);
-        max-width: 600px;
     }
     section{ 
     margin-top: 2rem;
@@ -66,50 +62,45 @@ nav{
 
 .paraBox{
     display: flex;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     padding-top: 6rem;
-    justify-content: space-between;
-}
-.heaDer{
-    height: 40px;
-    width: 550px;
-    text-align: left;
-
+    gap: 4rem;
 }
 
 .content > h1{
-    font-size: 39px;
+    font-size: 30.6px;
     line-height: 4rem;
 }
 
 .content > p{
-    font-size: 23px;
-}
-.heaDer > h4{
-    font-size: 18px;
-    opacity: 0.7;
-    font-weight: 400;
+    font-size: 20px;
 }
 
-.heaDer>p{
-    font-size: 19px;
-    margin-top: 5px;
+.iconBox{
+    width: 400px;
+}
+
+.iconBox > h4{
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 0.5rem;
+}
+
+.iconBox>p{
+    font-size: 15px;
     opacity: 0.5;
 }
 
 
 .formBox{ 
     height: 650px;
-    width: 550px;
+    width: 500px;
    padding: 10px 20px;
     border-radius: 19px;
     background-color: #f1efef;
-    padding-top: 0.5rem;
-    margin-right:1.5rem ;
-   
+   }
 
-}
 .formBoo{
     display: flex;
     flex-direction: column;
@@ -121,6 +112,7 @@ nav{
     font-size: 17px;
     padding-bottom:10px;
 }
+
 .formBoo>input{
     height: 50px;
     border-radius: 10px;
@@ -130,16 +122,17 @@ nav{
     padding-left: 1rem;
 }
 
-.formBoo>select{
+.formBoo > select{
     height: 50px;
     font-size: 17px;
     margin-bottom: 1.5rem;
-    padding-left: 1rem;
+    padding:1rem;
     border: none;
     font-size: 15px;
     opacity: 0.5;
+    border-radius: 10px;
 }
- 
+
 .formBoo>button{
     height: 60px;
     border-radius: 10px;
@@ -152,12 +145,9 @@ nav{
     .paraBox{
         flex-direction: column;
         width: calc(100% - 40px);
-        gap: 25rem;
+        gap: 3rem;
     }
 
-    .heaDer{
-        
-    }
 .content > h1{
     font-size: 20px;
     line-height: 2rem;
@@ -166,13 +156,12 @@ nav{
 .content > p{
     font-size: 13px;
 }
-.heaDer > h4{
+.iconBox > h4{
     font-size: 13px;
-    opacity: 0.75;
     font-weight: 400;
 }
 
-.heaDer>p{
+.iconBox>p{
     font-size: 12px;
     margin-top: 1px;
     opacity: 0.5;
@@ -181,13 +170,11 @@ nav{
 
 .formBox{ 
     height: 500px;
-    width: 300px;
+    width: 100%;
    padding: 5px 10px;
     padding-top: 0.5rem;
     margin-right:0.5rem ;
-   
-
-}
+   }
 
 .formBoo > label{
     font-size: 15px;
@@ -200,10 +187,10 @@ nav{
     padding-left: 1rem;
 }
 
-.formBoo>select{
+.formBoo > select{
     height: 30px;
-    font-size: 13px;
-    margin-bottom: 1.5rem;
+    font-size: 12px;
+    margin-bottom: 0.5rem;
     padding-left: 1rem;
     opacity: 0.5;
 }
@@ -220,46 +207,42 @@ nav{
 
 footer{
     background-color: #ffffff;
-    margin-left: 4rem;
-
+      margin-left: 4rem;
 }
 
 .footBody{
+    max-width: 1000px;
+    margin: auto;
     padding-top: 6rem;
 }
 
  .foot{
-    display: flex;
+     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     font-size: 25px;
-
 }
 
 .footLeg{
-    display: flex;
+     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -2.4rem;
+    margin-top: -2.5rem;
+
 }
+
 @media(min-width:320px) and (max-width:500px){
     footer{
+        margin-left: 2rem;
+    }
+    .footBody{
         width: calc(100% - 40px);
         margin-left: 2rem;
         padding-bottom: 2rem;
     } 
-    .footBody{
-        padding-top: 20rem;
-    }
 
-    .foot > img{
-        width: 50px;
-    }
 
     .footLeg{
-        display: block;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        
+       display: block;
     }
 }
